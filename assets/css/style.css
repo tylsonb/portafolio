@@ -61,7 +61,7 @@ html {
   border-radius: 40px;
 }
 
-.picture {
+.picturep {
   margin-top: 40px;
   border: 10px solid #1CB698;
   display: block;
@@ -121,10 +121,6 @@ section {
   padding: 20px 0;
 }
 
-h2 {
-  font-size: bold;
-}
-
 .badge {
 
   background-color: #1cb698 !important;
@@ -138,6 +134,10 @@ h2 {
 
 
 /* SKILL */
+
+.parrafo {
+  display: none
+}
 
 .skills {
   background-color: #252A2E;
@@ -161,10 +161,18 @@ h2 {
   transition: all 0.2s ease-in;
 }
 
-.skills .columna:hover {
+.skills .columna:hover{
   color: white;
   background: linear-gradient(135deg, #1cb698 0%, #8182a4 100%);
+
 }
+
+.skills .columna:hover .parrafo {
+  display: inline-block;
+  color: white;
+}
+
+
 
 .skills i {
   font-size: 1.5rem;
@@ -268,6 +276,12 @@ h2 {
 }
 
 /* SECCION CONTACTO */
+
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #252A2E inset !important; /* Mantener el fondo oscuro */
+  -webkit-text-fill-color: #fff !important; /* Mantener el texto blanco */
+}
 
 .contenido-seccion h2 {
   font-size: 48px;
