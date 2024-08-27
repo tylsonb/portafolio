@@ -11,6 +11,10 @@ html {
   scroll-behavior: smooth;
 }
 
+section {
+  scroll-margin-top: 80px;
+}
+
 /* NavBar */
 .navbar {
   background: #1e2326;
@@ -43,7 +47,7 @@ html {
 }
 
 .hero {
-  background-image: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 0.5)), url(../assets/imgs/hero.jpg);
+  background-image: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 0.5)), url(../imgs/hero.jpg);
   background-size: cover;
   height: 100vh;
   color: #fff;
@@ -161,7 +165,7 @@ section {
   transition: all 0.2s ease-in;
 }
 
-.skills .columna:hover{
+.skills .columna:hover {
   color: white;
   background: linear-gradient(135deg, #1cb698 0%, #8182a4 100%);
 
@@ -268,7 +272,7 @@ section {
 /* CONTACTO */
 
 .contacto {
-  background-image: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 0.5)), url(../assets/imgs/fondo2.png);
+  background-image: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 0.5)), url(../imgs/fondo2.png);
   background-color: #1e2326;
   color: #fff;
   padding: 50px 0;
@@ -279,8 +283,10 @@ section {
 
 input:-webkit-autofill,
 textarea:-webkit-autofill {
-  -webkit-box-shadow: 0 0 0 1000px #252A2E inset !important; /* Mantener el fondo oscuro */
-  -webkit-text-fill-color: #fff !important; /* Mantener el texto blanco */
+  -webkit-box-shadow: 0 0 0 1000px #252A2E inset !important;
+  /* Mantener el fondo oscuro */
+  -webkit-text-fill-color: #fff !important;
+  /* Mantener el texto blanco */
 }
 
 .contenido-seccion h2 {
@@ -330,6 +336,7 @@ textarea {
   margin: 0 0.25em 0.5em 0.25em;
   color: #fff;
 }
+
 
 .text-white {
   font-family: 'Righteous';
